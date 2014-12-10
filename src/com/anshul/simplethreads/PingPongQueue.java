@@ -3,6 +3,13 @@ package com.anshul.simplethreads;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
+/**
+ * This approach is not correct. If a ping thread goes on for a while longer, 
+ * it ends up print consequitive pings. Using blocking queue you cannot implement
+ * this.
+ * @author anshulkhare
+ *
+ */
 public class PingPongQueue {
 
 	public static void main(String[] args) {
